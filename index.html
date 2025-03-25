@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nb">
   <head>
-    <title>Tittel på siden</title>
+    <title>Foundation Furnitures</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
@@ -9,19 +9,85 @@
   </head>
   <body>
     <header>
-      <!-- Navigasjonsbar, logo, overskrift, søk-funksjon, innlogging -->
+      <nav>
+        <ul class="navLinks">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="info.html">Information</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="privacy.html">Privacy Policy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <!-- Ulike seksjoner,  -->
-      <section>
-        <!-- Hero-seksjon,   -->
+      <section class="heroSection">
+        <h1>Foundation Furnitures</h1>
       </section>
-      <section>
-        <!-- Videre informasjon -->
+      <section class="productsPreview">
+        <div class="productsCard">
+          Produkt 1
+        </div>
+        <div class="productsCard">
+          Produkt 2
+        </div>
+        <div class="productsCard">
+          Produkt 3
+        </div>
+        
+      </section>
+      <img src="images/goodbrief (1).png" alt="" width="700px">
+      <section id="contactSection">
+        <form id="contactForm">
+          <label for="name">
+            Your name
+          </label>
+            <input type="text" id="name" placeholder="Your Name">
+          <label for="phone">
+            Phone number
+          </label>
+            <input type="number" id="phone" placeholder="Your Phone Number">
+          <label for="email">
+            Your email
+          </label>
+            <input type="email" id="email">
+          <label for="contantReason">
+            What can we help you with?
+          </label>
+            <select name="contantReason" id="contantReason">
+              <option value="New product">Order new product</option>
+              <option value="Bought product">Previously bought product</option>
+              <option value="Return">Return product</option>
+              <option value="Other">Other</option>
+            </select>
+          <label for="comment">
+            What can we help you with?
+          </label>
+           <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </form>
       </section>
     </main>
     <footer>
-      <!-- Kreditasjon, sosiale medier, kontaktinformasjon -->
+      <ul class="footerLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="info.html">Information</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="privacy.html">Privacy Policy</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
