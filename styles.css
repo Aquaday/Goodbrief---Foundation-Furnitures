@@ -1,16 +1,38 @@
 :root {
-    --red: #660000;
-    --purple: #990033;
-    --darkpurple: #5F021F;
-    --lighterred: #8C001A;
-    --orange: #FF9000;
+    --red: #ff0000;
     --white: #ffffff;
     --black: #000000;
 }
 
+.figtree {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.noto-sans-jp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     margin: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font: "Nato Sans JP";
 }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--white);
+}
+
+
+
 
 /* ____________________NAV _______________________________ */
 
@@ -28,6 +50,8 @@ nav ul {
     margin-left: 100px;
 }
 
+/* ____________________Hero_______________________________ */
+
 .heroSection {
     height: 50vh;
     background-color: var(--darkpurple);
@@ -35,6 +59,9 @@ nav ul {
     justify-content: center;
     align-items: center;
 }
+
+
+/* ____________________Products_______________________________ */
 
 .productsPreview {
     background-color: var(--orange);
@@ -44,18 +71,64 @@ nav ul {
     align-items: center;
     gap: 30px;
     padding: 40px;
-    
 }
 
 .productsCard {
-    background-color: var(--purple);
-    border: 2px solid var(--lighterred);
+    background-color: var(--white);
+    color: var(--red);
     border-radius: 10px;
-    width: 150px;
-    height: 300px;
-    padding: 20px;
-
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
+
+.productsCard img {
+    border-radius: 10px;
+}
+
+.infoCard {
+    text-align: center;
+    height: 150px;
+}
+
+.infoCard h3 {
+    margin-top: 5px;
+    font-weight: 900;
+}
+
+.infoCardPlacement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.ratingCard {
+    text-align: center;
+    color: var(--orange);
+    background-color: var(--white);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.ratingCard p {
+    margin: 0;
+}
+
+.buttonCard {
+    display: flex;
+}
+
+.buttonCard button {
+    background-color: var(--orange);
+    width: 50%;
+    border: 5px solid var(--white);
+    padding: 15px;
+    
+}
+
+/* ____________________Contact _______________________________ */
 
 #contactSection {
     background-color: var(--darkpurple);    
@@ -86,12 +159,7 @@ nav ul {
     border-radius: 10px;
 }
 
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color:var(--white);
-}
+/* ____________________Footer _______________________________ */
 
 footer ul {
     list-style-type: none;
