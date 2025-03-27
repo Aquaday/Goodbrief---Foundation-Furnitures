@@ -27,4 +27,18 @@ let productArray = [
     }
 ]
 
+function placeElements() {
+    productArray.forEach((item) => {
+        const 
+    })
+}
 
+let h3Element = document.createElement("h3")
+let pElement = document.createElement("p")
+
+let shiftLeft = document.querySelector("#shiftLeft")
+let shiftRight = document.querySelector("#shiftRight")
+
+shiftLeft.addEventListener("click", () => {
+
+})
