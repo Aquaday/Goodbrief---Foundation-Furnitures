@@ -95,7 +95,6 @@ let productArray = [
 
 let arrayNumber = 0
 function placeElements() {
-    console.log(arrayNumber + "pre loop")
     const productsPreviewCard = document.querySelector(".productsPreviewCards")
     productsPreviewCard.innerHTML = ""
     for (let i = 0; i < 4; i++ ) {
@@ -106,31 +105,37 @@ function placeElements() {
              +  productArray[arrayNumber].name 
              + ' </h3>'
              + '<p>' + productArray[arrayNumber].info +'</p></div>'
-             + '<div class="ratingCard"><p>' 
+             + '<div class="ratingCard"><h5>User Rating</h5><p>' 
              +  productArray[arrayNumber].rating + '</p> </div><div class="buttonCard"><button>Order now</button></div></div>'
-             productsPreviewCard.appendChild(divElement)
+        productsPreviewCard.appendChild(divElement)
         arrayNumber = arrayNumber + 1
-        console.log(arrayNumber + "for loop")
         
     }
     arrayNumber = arrayNumber - 4
-    console.log(arrayNumber + "post loop")
 }
 
 placeElements()
 
 let shiftLeft = document.querySelector("#shiftLeft")
+let shiftLeft2 = document.querySelector("#shiftLeft2")
 let shiftRight = document.querySelector("#shiftRight")
+let shiftRight2 = document.querySelector("#shiftRight2")
 
-shiftLeft.addEventListener("click", () => {
+function shiftLeftFunction() {
     if (arrayNumber >= 1) {
-    arrayNumber -= 1
-    placeElements()
+        arrayNumber -= 1
+        placeElements()
+    }
 }
-})
 
-shiftRight.addEventListener("click", () => {
+function shiftRightFunction() {
     if (arrayNumber <= productArray.length - 5) {
     arrayNumber += 1
     placeElements()}
-})
+}
+
+shiftLeft.addEventListener("click", shiftLeftFunction)
+shiftLeft2.addEventListener("click", shiftLeftFunction)
+
+shiftRight.addEventListener("click", shiftRightFunction)
+shiftRight2.addEventListener("click", shiftRightFunction)

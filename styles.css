@@ -76,13 +76,33 @@ nav ul {
 
 /* ____________________Products_______________________________ */
 
-.productsPreviewCards, .productsPreviewSection {
+
+.productsPreviewSection {
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productsPreviewCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
     padding: 40px;
+}
+
+.productsPreviewSection button {
+    background-color: var(--red);
+    border: 2px solid var(--darkred);
+    border-radius: 10px;
+    margin: 3px;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    
+
 }
 
 
@@ -111,7 +131,6 @@ nav ul {
 .infoCard h3 {
     margin-top: 5px;
     font-weight: 900;
-    
 }
 
 .infoCardPlacement {
@@ -131,6 +150,10 @@ nav ul {
     margin: 0;
 }
 
+.ratingCard h5 {
+    margin: 0;
+}
+
 .buttonCard {
     display: flex;
 }
@@ -143,7 +166,7 @@ nav ul {
     margin: 3px;
     padding: 15px;
     font-weight: 700;
-    
+    cursor: pointer;
 }
 
 /* ____________________Contact _______________________________ */
