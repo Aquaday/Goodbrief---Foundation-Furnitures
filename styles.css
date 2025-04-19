@@ -50,6 +50,9 @@ nav ul {
     padding: 0;
     margin-left: 100px;
 }
+.activeNav {
+    color: var(--black);
+}
 
 /* ____________________Hero_______________________________ */
 
