@@ -2,6 +2,7 @@
     --red: #ff0000;
     --darkred: #8B0000;
     --white: #ffffff;
+    --gray: #888888;
     --black: #000000;
 }
 
@@ -79,6 +80,21 @@ nav ul {
 .subHeader {
     font-size: 20px;
 }
+
+/* ____________________Ad Section _______________________________ */
+
+.adsSection {
+    background-color: var(--gray);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adsSection h1 {
+    font-size: 100px;
+}
+
 
 /* ____________________Products_______________________________ */
 
@@ -174,12 +190,6 @@ nav ul {
     cursor: pointer;
 }
 
-/* ____________________Ad Section _______________________________ */
-
-.adsSection {
-    background-color: var(--black);
-    height: 50vh;
-}
 
 
 /* ____________________Contact Section _______________________________ */
@@ -212,6 +222,17 @@ nav ul {
     border: 3px solid var(--red);
     border-radius: 10px;
 }
+
+/* ____________________Terms and Service_______________________________ */
+
+.termsSection {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ____________________Footer _______________________________ */
 
