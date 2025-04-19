@@ -76,7 +76,7 @@ nav ul {
 
 /* ____________________Products_______________________________ */
 
-.productsPreview {
+.productsPreviewCards, .productsPreviewSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -84,6 +84,7 @@ nav ul {
     gap: 30px;
     padding: 40px;
 }
+
 
 .productsCard {
     background-color: var(--white);
@@ -101,6 +102,8 @@ nav ul {
 .productsCard img {
     border-radius: 10px;
 }
+
+.productsCard
 
 .infoCard {
     text-align: center;
