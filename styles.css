@@ -90,18 +90,17 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 40px;
+    padding: 0px 40px;
 }
 
 .productsPreviewSection button {
     background-color: var(--red);
-    border: 2px solid var(--darkred);
-    border-radius: 10px;
-    margin: 3px;
-    padding: 15px;
+    margin: 15px;
+    padding: 5px 50px;
     font-weight: 700;
     cursor: pointer;
-    
+    border: none;
+    line-height: 20px;
 
 }
 
