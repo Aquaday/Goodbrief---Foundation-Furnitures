@@ -174,7 +174,15 @@ nav ul {
     cursor: pointer;
 }
 
-/* ____________________Contact _______________________________ */
+/* ____________________Ad Section _______________________________ */
+
+.adsSection {
+    background-color: var(--black);
+    height: 50vh;
+}
+
+
+/* ____________________Contact Section _______________________________ */
 
 #contactSection {
     background-color: var(--white);    
