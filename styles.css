@@ -73,15 +73,18 @@ nav ul {
     margin-bottom: 0;
 }
 
+.subHeader {
+    font-size: 20px;
+}
 
 /* ____________________Products_______________________________ */
 
 
 .productsPreviewSection {
     display: flex;
-flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 40px 0px;
 }
 
 .productsPreviewCards {
@@ -93,15 +96,15 @@ flex-direction: column;
     padding: 0px 40px;
 }
 
-.productsPreviewSection button {
-    background-color: var(--red);
+.shiftButtons {
+    background-color: var(--white);
     margin: 15px;
-    padding: 5px 50px;
+    padding: 5px 20px;
     font-weight: 700;
     cursor: pointer;
-    border: none;
+    border: 1px solid var(--darkred);
+    border-radius: 5px;
     line-height: 20px;
-
 }
 
 
@@ -212,4 +215,32 @@ footer {
     display: flex;
     justify-content: start;
     padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .shiftButtons {
+        padding: 5px 10px;
+    }
+    .productsPreviewCards {
+        padding: 2px;
+    }
+}
+
+@media (max-width: 380px) {
+    .heroSection h1 {
+        font-size: 30px;
+    }
+    .subHeader {
+        font-size: 20px;
+    }
+    .shiftButtons {
+        padding: 5px 10px;
+        margin: 10px;
+    }
+    .productsPreviewCards {
+        padding: 0px;
+    }
+    .productsCard {
+        width: 200px;
+    }
 }
